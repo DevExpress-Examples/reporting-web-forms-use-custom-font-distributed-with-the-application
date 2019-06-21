@@ -6,6 +6,9 @@
 * **[SampleReport.cs](./CS/E5198/SampleReport.cs) (VB: [SampleReport.vb](./VB/E5198/SampleReport.vb))**
 <!-- default file list end -->
 # How to use a private font (a custom font distributed with the application) in XtraReport
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e5198/)**
+<!-- run online end -->
 
 
 <p>This example demonstrates how to use a custom font distributed with the application in XtraReport.</p>
