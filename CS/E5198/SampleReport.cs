@@ -1,10 +1,4 @@
-﻿using System;
-using System.Web;
-using System.Drawing;
-using System.Collections;
-using System.ComponentModel;
-using DevExpress.XtraReports.UI;
-using System.Drawing.Text;
+﻿using System.Drawing;
 
 
 namespace E5198 {
@@ -12,18 +6,7 @@ namespace E5198 {
         public SampleReport() {
             InitializeComponent();
 
-            customFontStyle.Font = new Font(FontCollection.Families[0], 48F, FontStyle.Regular, GraphicsUnit.Point);
-        }
-
-        static PrivateFontCollection fontCollection;
-        public static FontCollection FontCollection {
-            get {
-                if (fontCollection == null) {
-                    fontCollection = new PrivateFontCollection();
-                    fontCollection.AddFontFile(HttpContext.Current.Server.MapPath("~/Fonts/MissFajardose-Regular.ttf"));
-                }
-                return fontCollection;
-            }
-        }
+            customFontStyle.Font = new Font(CustomFontsHelper.GetFamily("Miss Fajardose"), 48F, FontStyle.Regular, GraphicsUnit.Point);
+        }        
     }
 }

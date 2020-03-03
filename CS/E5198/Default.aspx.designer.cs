@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------------
 
 namespace E5198 {
-    
-    
+
+
     public partial class Default {
-        
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,14 +20,14 @@ namespace E5198 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
-        /// documentViewer control.
+        /// ASPxWebDocumentViewer1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.XtraReports.Web.ASPxDocumentViewer documentViewer;
+        protected global::DevExpress.XtraReports.Web.ASPxWebDocumentViewer ASPxWebDocumentViewer1;
     }
 }

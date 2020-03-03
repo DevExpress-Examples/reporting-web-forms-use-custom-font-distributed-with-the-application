@@ -1,32 +1,29 @@
-<!-- default file list -->
-*Files to look at*:
+This example demonstrates how to use a custom font distributed with the application in XtraReport.  
+  
+  
+The main idea of this approach is to use the [PrivateFontCollection](http://msdn.microsoft.com/en-us/library/system.drawing.text.privatefontcollection%28v=vs.110%29.aspx) class to store custom font families. Use the [Families](http://msdn.microsoft.com/en-us/library/system.drawing.text.fontcollection.families%28v=vs.110%29.aspx) property to access the FontFamily objects of your private fonts.   
 
-* [Default.aspx](./CS/E5198/Default.aspx) (VB: [Default.aspx](./VB/E5198/Default.aspx))
-* [Default.aspx.cs](./CS/E5198/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/E5198/Default.aspx.vb))
-* **[SampleReport.cs](./CS/E5198/SampleReport.cs) (VB: [SampleReport.vb](./VB/E5198/SampleReport.vb))**
-<!-- default file list end -->
-# How to use a private font (a custom font distributed with the application) in XtraReport
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e5198/)**
-<!-- run online end -->
+In this example, the static "FontCollection" property of the "CustomFontsHelper" class is used to store the report's private fonts. Then, in the report constructor, the font families from this static collection are used to initialize fonts of the report components.  
+  
+  
+This is a cross\-platform approach, so it can be used for all technologies supported by XtraReports. However, there are some notes:  
+  
+  
+### Web Applications
+The [Document Viewer](https://docs.devexpress.com/XtraReports/17738/create-end-user-reporting-applications/web-reporting/asp-net-webforms-reporting/document-viewer) component caches report documents by default. When the report is restored from the cache, the fonts are loaded from the system fonts. To overcome this behavior it is necessary to override the font loading code to make it use the PrivateFontCollection to restore fonts. The CustomFontConverter class *(inherited from the DevExpress.Utils.Serializing.PrintingSystemXmlSerializer.FontConverter class)* is used for this purpose in this code example. To force the Reporting components use this custom font converter it is necessary to unregister the default font converter class and then register the custom font converter when the application is started.
 
-
-<p>This example demonstrates how to use a custom font distributed with the application in XtraReport.</p>
-<br />
-<p>The main idea of this approach is to use the <a href="http://msdn.microsoft.com/en-us/library/system.drawing.text.privatefontcollection%28v=vs.110%29.aspx"><u>PrivateFontCollection</u></a> class to store custom font families. Use the <a href="http://msdn.microsoft.com/en-us/library/system.drawing.text.fontcollection.families%28v=vs.110%29.aspx"><u>Families</u></a> property to access the FontFamily objects of your private fonts.</p>
-<p>In this example, the static "FontCollection" property is used to store the report's private fonts. Then, in the report constructor, the private font families are used to specify fonts of the report controls.</p>
-<p><strong><br /> </strong></p>
-<p>This is a cross-platform approach, so it can be used for all technologies supported by XtraReports. However, there are some notes:</p>
-<p><strong><br /> </strong><strong>ASP.NET<br /> </strong>The private font will be available only on your web server, so it won't be displayed in ASPxDocumentViewer by default if it is not installed on the client machine.</p>
-<p>However, you can register this custom font on your webpage, for example by using the <a href="http://www.w3schools.com/cssref/css3_pr_font-face_rule.asp"><u>@font-face</u></a> CSS rule. In this case, add this rule to your webpage with the viewer and set your <a href="https://documentation.devexpress.com/#XtraReports/DevExpressXtraReportsWebDocumentViewerDocumentViewerReportViewerSettings_UseIFrametopic"><u>ASPxDocumentViewer.SettingsReportViewer.UseIFrame</u></a> property to the "false" value to prevent your report from being rendered in an iframe. This approach is demonstrated in this example.<br /><br /><strong>WPF</strong><br />The font cannot be registered globally by using the PrivateFontCollection in WPF, so the explicit reference to the embedded font is required there. The <a href="https://www.devexpress.com/Support/Center/p/E5083">E5083: How to display a report that uses a private font (distributed with the application) in DocumentPreview</a> code example demonstrates how to work around this limitation.<br /><br /></p>
-<p><strong>See also:</strong><br /> <a href="http://msdn.microsoft.com/en-us/library/y505zzfw%28v=vs.110%29.aspx"><u>How to: Create a Private Font Collection (MSDN)</u></a></p>
-
-
-<h3>Description</h3>
-
-<p><br />
-</p>
-
-<br/>
-
-
+**Note:** The **Azure Web Service**, **macOS** and **Linux** hosting environments does not support the [PrivateFontCollection](http://msdn.microsoft.com/en-us/library/system.drawing.text.privatefontcollection%28v=vs.110%29.aspx) functionality.
+  
+### WPF Applications
+The font cannot be registered globally by using the PrivateFontCollection in WPF, so the explicit reference to the embedded font is required there. The [E5083: How to display a report that uses a private font (distributed with the application) in DocumentPreview](https://www.devexpress.com/Support/Center/p/E5083) code example demonstrates how to work around this limitation.  
+  
+  
+ 
+## Files to look at  
+  
+  
+ - [Default.aspx](https://github.com/DevExpress-Examples/Reporting_how-to-use-a-private-font-a-custom-font-distributed-with-the-application-in-e5198/blob/18.2.11%2B/CS/E5198/Default.aspx) (VB: [Default.aspx](https://github.com/DevExpress-Examples/Reporting_how-to-use-a-private-font-a-custom-font-distributed-with-the-application-in-e5198/blob/18.2.11%2B/VB/E5198/Default.aspx))  
+ - **[SampleReport.cs](https://github.com/DevExpress-Examples/Reporting_how-to-use-a-private-font-a-custom-font-distributed-with-the-application-in-e5198/blob/18.2.11%2B/CS/E5198/SampleReport.cs) (VB: [SampleReport.vb](https://github.com/DevExpress-Examples/Reporting_how-to-use-a-private-font-a-custom-font-distributed-with-the-application-in-e5198/blob/18.2.11%2B/VB/E5198/SampleReport.vb))**  
+  
+## See also
+[How to: Create a Private Font Collection (MSDN)](http://msdn.microsoft.com/en-us/library/y505zzfw%28v=vs.110%29.aspx)  
