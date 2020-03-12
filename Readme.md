@@ -1,4 +1,7 @@
 # This example demonstrates how to use a custom font distributed with the application in XtraReport.  
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e5198/)**
+<!-- run online end -->
   
   
 The main idea of this approach is to use the [PrivateFontCollection](http://msdn.microsoft.com/en-us/library/system.drawing.text.privatefontcollection%28v=vs.110%29.aspx) class to store custom font families. Use the [Families](http://msdn.microsoft.com/en-us/library/system.drawing.text.fontcollection.families%28v=vs.110%29.aspx) property to access the FontFamily objects of your private fonts.   
