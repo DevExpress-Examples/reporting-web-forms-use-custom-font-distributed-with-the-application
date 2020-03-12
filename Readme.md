@@ -12,14 +12,10 @@ In this example, the static "FontCollection" property of the "CustomFontsHelper"
 This is a cross\-platform approach, so it can be used for all technologies supported by XtraReports. However, there are some notes:  
   
   
-### Web Applications
+### Web Applications and CachedReportSource
 The [Document Viewer](https://docs.devexpress.com/XtraReports/17738/create-end-user-reporting-applications/web-reporting/asp-net-webforms-reporting/document-viewer) component caches report documents by default. When the report is restored from the cache, the fonts are loaded from the system fonts. To overcome this behavior it is necessary to override the font loading code to make it use the PrivateFontCollection to restore fonts. The CustomFontConverter class *(inherited from the DevExpress.Utils.Serializing.PrintingSystemXmlSerializer.FontConverter class)* is used for this purpose in this code example. To force the Reporting components use this custom font converter it is necessary to unregister the default font converter class and then register the custom font converter when the application is started.
 
-**Note:** The **Azure Web Service**, **macOS** and **Linux** hosting environments does not support the [PrivateFontCollection](http://msdn.microsoft.com/en-us/library/system.drawing.text.privatefontcollection%28v=vs.110%29.aspx) functionality.
-  
-### WPF Applications
-The font cannot be registered globally by using the PrivateFontCollection in WPF, so the explicit reference to the embedded font is required there. The [E5083: How to display a report that uses a private font (distributed with the application) in DocumentPreview](https://www.devexpress.com/Support/Center/p/E5083) code example demonstrates how to work around this limitation.  
-  
+**Note:** The **Azure Web Service**, **macOS** and **Linux** hosting environments does not support the [PrivateFontCollection](http://msdn.microsoft.com/en-us/library/system.drawing.text.privatefontcollection%28v=vs.110%29.aspx) functionality.  
   
  
 ## Files to look at  
@@ -32,3 +28,4 @@ The font cannot be registered globally by using the PrivateFontCollection in WPF
   
 ## See also
 [How to: Create a Private Font Collection (MSDN)](http://msdn.microsoft.com/en-us/library/y505zzfw%28v=vs.110%29.aspx)  
+[How to display a report that uses a private (embedded) font in a DocumentPreviewControl (WPF Application)](https://www.devexpress.com/Support/Center/p/E5083)
