@@ -28,11 +28,11 @@ The [Document Viewer](https://docs.devexpress.com/XtraReports/17738/create-end-u
  
 ## Files to look at  
  
-- [CustomFontConverter.cs](https://github.com/DevExpress-Examples/Reporting_how-to-use-a-private-font-a-custom-font-distributed-with-the-application-in-e5198/blob/18.2.11%2B/CS/E5198/CustomFontConverter.cs) (VB: [CustomFontConverter.vb](https://github.com/DevExpress-Examples/Reporting_how-to-use-a-private-font-a-custom-font-distributed-with-the-application-in-e5198/blob/18.2.11%2B/VB/E5198/CustomFontConverter.vb))  
-- [CustomFontsHelper.cs](https://github.com/DevExpress-Examples/Reporting_how-to-use-a-private-font-a-custom-font-distributed-with-the-application-in-e5198/blob/18.2.11%2B/CS/E5198/CustomFontsHelper.cs) (VB: [CustomFontsHelper.vb](https://github.com/DevExpress-Examples/Reporting_how-to-use-a-private-font-a-custom-font-distributed-with-the-application-in-e5198/blob/18.2.11%2B/VB/E5198/CustomFontsHelper.vb)) 
-- [Global.asax.cs](https://github.com/DevExpress-Examples/Reporting_how-to-use-a-private-font-a-custom-font-distributed-with-the-application-in-e5198/blob/18.2.11%2B/CS/E5198/Global.asax.cs) (VB: [Global.asax.vb](https://github.com/DevExpress-Examples/Reporting_how-to-use-a-private-font-a-custom-font-distributed-with-the-application-in-e5198/blob/18.2.11%2B/VB/E5198/Global.asax.vb)) 
-- [Default.aspx](https://github.com/DevExpress-Examples/Reporting_how-to-use-a-private-font-a-custom-font-distributed-with-the-application-in-e5198/blob/18.2.11%2B/CS/E5198/Default.aspx) (VB: [Default.aspx](https://github.com/DevExpress-Examples/Reporting_how-to-use-a-private-font-a-custom-font-distributed-with-the-application-in-e5198/blob/18.2.11%2B/VB/E5198/Default.aspx))  
-- [SampleReport.cs](https://github.com/DevExpress-Examples/Reporting_how-to-use-a-private-font-a-custom-font-distributed-with-the-application-in-e5198/blob/18.2.11%2B/CS/E5198/SampleReport.cs) (VB: [SampleReport.vb](https://github.com/DevExpress-Examples/Reporting_how-to-use-a-private-font-a-custom-font-distributed-with-the-application-in-e5198/blob/18.2.11%2B/VB/E5198/SampleReport.vb))  
+- [CustomFontConverter.cs](./CS/E5198/CustomFontConverter.cs) (VB: [CustomFontConverter.vb](./VB/E5198/CustomFontConverter.vb))  
+- [CustomFontsHelper.cs](./CS/E5198/CustomFontsHelper.cs) (VB: [CustomFontsHelper.vb](./VB/E5198/CustomFontsHelper.vb)) 
+- [Global.asax.cs](./CS/E5198/Global.asax.cs) (VB: [Global.asax.vb](./VB/E5198/Global.asax.vb)) 
+- [Default.aspx](./CS/E5198/Default.aspx) (VB: [Default.aspx](./VB/E5198/Default.aspx))  
+- [SampleReport.cs](./CS/E5198/SampleReport.cs) (VB: [SampleReport.vb](./VB/E5198/SampleReport.vb))  
   
 ## See also
 [How to: Create a Private Font Collection (MSDN)](http://msdn.microsoft.com/en-us/library/y505zzfw%28v=vs.110%29.aspx)  
