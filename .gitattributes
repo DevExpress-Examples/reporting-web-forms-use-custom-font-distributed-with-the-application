@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
@@ -61,3 +62,9 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+=======
+VB/* linguist-vendored
+scripts linguist-vendored
+*.css linguist-detectable=false
+*.aff linguist-detectable=false
+>>>>>>> 13.2.8+
