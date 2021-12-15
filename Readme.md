@@ -12,7 +12,7 @@
 <!-- default file list end -->
 # How to use a private font (a custom font distributed with the application) in XtraReport
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e5198/)**
+**[[Run Online]](https://codecentral.devexpress.com/128603777/)**
 <!-- run online end -->
 
 
