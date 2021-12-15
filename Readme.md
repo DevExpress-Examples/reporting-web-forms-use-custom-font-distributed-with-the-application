@@ -8,7 +8,7 @@
 This example demonstrates how to use a custom font distributed with the application in XtraReport.  
 
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e5198/)**
+**[[Run Online]](https://codecentral.devexpress.com/128603777/)**
 <!-- run online end -->
   
   
