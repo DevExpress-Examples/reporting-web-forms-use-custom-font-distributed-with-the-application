@@ -1,4 +1,4 @@
-﻿using DevExpress.Utils.Serializing;
+using DevExpress.Utils.Serializing;
 using System;
 using System.Collections.Generic;
 using System.Drawing;

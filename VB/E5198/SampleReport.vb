@@ -1,4 +1,4 @@
-﻿Imports System.Drawing
+Imports System.Drawing
 
 
 Namespace E5198

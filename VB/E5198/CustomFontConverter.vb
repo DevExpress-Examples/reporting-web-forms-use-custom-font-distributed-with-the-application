@@ -1,4 +1,4 @@
-﻿Imports DevExpress.Utils.Serializing
+Imports DevExpress.Utils.Serializing
 Imports System
 Imports System.Collections.Generic
 Imports System.Drawing
