@@ -10,10 +10,7 @@ This example shows how to create a report that uses the custom font shipped with
 
 ![Report with Custom Fonts](./Images/report-with-custom-fonts.png)
 
-In this example, the `CustomFontsHelper` static class uses a [PrivateFontCollection](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.text.privatefontcollection) object to store custom fonts and install them without affecting the system font collection. 
-
-
-In this example, the static `FontCollection` property of the `CustomFontsHelper` class stores the custom report fonts. The report constructor uses font families from this static collection to create a new font and a [XRControlStyle](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRControlStyle) report style based on the newly created font. The new custom style is added to the [XtraReport.StyleSheet](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XtraReport.StyleSheet) collection.
+In this example, the `CustomFontsHelper` static class uses a [PrivateFontCollection](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.text.privatefontcollection) object to store custom fonts and install them without affecting the system font collection. The report constructor uses font families from this static collection to create a new font and a [XRControlStyle](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRControlStyle) report style based on the newly created font. The new custom style is added to the [XtraReport.StyleSheet](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XtraReport.StyleSheet) collection.
 
 Although this example is a WebForms application, the technique is valid for all DevExpress Reporting platforms.
 
