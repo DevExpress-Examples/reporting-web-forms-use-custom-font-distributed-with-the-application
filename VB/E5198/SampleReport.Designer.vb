@@ -28,7 +28,7 @@
 			Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
 			Me.TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
 			Me.customFontStyle = New DevExpress.XtraReports.UI.XRControlStyle()
-			CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me, System.ComponentModel.ISupportInitialize).BeginInit()
 			' 
 			' lbText
 			' 
@@ -71,7 +71,7 @@
 			Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() { Me.Detail, Me.TopMargin, Me.BottomMargin})
 			Me.StyleSheet.AddRange(New DevExpress.XtraReports.UI.XRControlStyle() { Me.customFontStyle})
 			Me.Version = "13.2"
-			CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
 		End Sub
 

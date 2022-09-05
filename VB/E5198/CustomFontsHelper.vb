@@ -7,15 +7,15 @@ Imports System.Web
 Namespace E5198
 	Public Module CustomFontsHelper
 
-'INSTANT VB NOTE: The field fontCollection was renamed since Visual Basic does not allow fields to have the same name as other class members:
-		Private fontCollection_Conflict As PrivateFontCollection
+'INSTANT VB NOTE: The variable fontCollection was renamed since Visual Basic does not allow variables and other class members to have the same name:
+		Private fontCollection_Renamed As PrivateFontCollection
 		Public ReadOnly Property FontCollection() As FontCollection
 			Get
-				If fontCollection_Conflict Is Nothing Then
-					fontCollection_Conflict = New PrivateFontCollection()
-					fontCollection_Conflict.AddFontFile(HttpContext.Current.Server.MapPath("~/Fonts/MissFajardose-Regular.ttf"))
+				If fontCollection_Renamed Is Nothing Then
+					fontCollection_Renamed = New PrivateFontCollection()
+					fontCollection_Renamed.AddFontFile(HttpContext.Current.Server.MapPath("~/Fonts/MissFajardose-Regular.ttf"))
 				End If
-				Return fontCollection_Conflict
+				Return fontCollection_Renamed
 			End Get
 		End Property
 
