@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128603777/2022.2)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E5198)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # Reporting for Web - How to Use a Custom Font Distributed With the Application
 
 This example shows how to create a report that uses the custom font shipped with the application.
@@ -12,6 +7,7 @@ This example shows how to create a report that uses the custom font shipped with
 In this example, the [DXFontRepository](https://docs.devexpress.com/CoreLibraries/DevExpress.Drawing.DXFontRepository) object instance loads a font from a file. The report constructor creates a new font and a [XRControlStyle](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRControlStyle) report style based on the newly created font. The new custom style is added to the [XtraReport.StyleSheet](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XtraReport.StyleSheet) collection.
 
 > **Note**
+>
 > Although this example is a Web Forms application, the technique is valid for all DevExpress Reporting platforms.
 
 ## Files to Look At  
@@ -26,4 +22,5 @@ In this example, the [DXFontRepository](https://docs.devexpress.com/CoreLibrarie
 - [DXFontRepository](https://docs.devexpress.com/CoreLibraries/DevExpress.Drawing.DXFontRepository)
 
 ## More Examples
-[Reporting for WPF - How to Display a Custom Font in a Report Preview](https://github.com/DevExpress-Examples/reporting-wpf-use-private-custom-font-distributed-with-application)
+
+- [Reporting for WPF - How to Display a Custom Font in a Report Preview](https://github.com/DevExpress-Examples/reporting-wpf-use-private-custom-font-distributed-with-application)
