@@ -1,3 +1,4 @@
+using DevExpress.Drawing;
 using DevExpress.Utils.Serializing;
 using System;
 using System.Collections.Generic;
@@ -11,8 +12,9 @@ namespace E5198 {
     public class Global : System.Web.HttpApplication {
 
         protected void Application_Start(object sender, EventArgs e) {
-            PrintingSystemXmlSerializer.UnregisterConverter(typeof(Font));
-            PrintingSystemXmlSerializer.RegisterConverter(new CustomFontConverter());
+            string fontFilePath = HttpContext.Current.Server.MapPath("~/Fonts/MissFajardose-Regular.ttf");
+            byte[] fontData = System.IO.File.ReadAllBytes(fontFilePath);
+            DXFontRepository.Instance.AddFont(fontData);
 
             DevExpress.XtraReports.Web.ASPxWebDocumentViewer.StaticInitialize();
         }
