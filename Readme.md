@@ -2,7 +2,7 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E5198)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Reporting for Web - How to Use a Custom Font Distributed With the Application
+# Reporting for Web Forms - How to Use a Custom Font Distributed With the Application
 
 This example shows how to create a report that uses the custom font shipped with the application.
 
@@ -14,7 +14,7 @@ In this example, the [DXFontRepository](https://docs.devexpress.com/CoreLibrarie
 >
 > Although this example is a Web Forms application, the technique is valid for all DevExpress Reporting platforms.
 
-## Files to Look At  
+## Files to Review
 
 - [Global.asax.cs](CS/E5198/Global.asax.cs) (VB: [Global.asax.vb](VB/E5198/Global.asax.vb)) 
 - [Default.aspx](CS/E5198/Default.aspx) (VB: [Default.aspx](VB/E5198/Default.aspx))  
