@@ -2,6 +2,7 @@
 ![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128603777/18.2.11%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E5198)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
+[![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
 # How to use a private font (a custom font distributed with the application) in XtraReport
 
@@ -34,3 +35,10 @@ The [Document Viewer](https://docs.devexpress.com/XtraReports/17738/create-end-u
 ## See also
 [How to: Create a Private Font Collection (MSDN)](http://msdn.microsoft.com/en-us/library/y505zzfw%28v=vs.110%29.aspx)  
 [How to display a report that uses a private (embedded) font in a DocumentPreviewControl (WPF Application)](https://www.devexpress.com/Support/Center/p/E5083)
+<!-- feedback -->
+## Does this example address your development requirements/objectives?
+
+[<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-web-forms-use-custom-font-distributed-with-the-application&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-web-forms-use-custom-font-distributed-with-the-application&~~~was_helpful=no)
+
+(you will be redirected to DevExpress.com to submit your response)
+<!-- feedback end -->
